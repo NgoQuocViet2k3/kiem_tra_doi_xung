@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function isPalindrome(strings) {
+        let arr = strings.split('');
+        let newStr = arr.reverse().join('').toString();
+        return newStr === strings ? true : false;
+    }
+
+    let strings = prompt(` Nhập chuỗi `);
+    alert(isPalindrome(strings));
+
+
+</script>
+</body>
+</html>
